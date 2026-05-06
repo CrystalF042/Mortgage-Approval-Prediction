@@ -50,9 +50,33 @@ The final calibrated LightGBM model is deployed as an interactive R Shiny app:
 ├── appendix.ipynb            # Supplementary analyses
 │
 ├── data/                     # Raw data + preprocessing pipeline + encoded CSVs
+│   ├── data_prep.ipynb       # Data cleaning + feature engineering pipeline
+│   ├── data_prep_plots/
+│   ├── HMDA_CA_TX_2019_2024_Master.csv
+│   ├── X_train_ohe.csv
+│   ├── X_test_ohe.csv
+│   ├── y_train.csv
+│   ├── y_test.csv
+│   ├── train_ohe_with_y.csv
+│   ├── train_ohe_with_y2.csv
+│   ├── test_ohe_with_y.csv
+│   └── test_ohe_with_y2.csv
+│
 ├── eda_insights/             # Feature signal, redundancy, and SVD analysis
+│   ├── eda_insights.ipynb    # Signal ranking, lift, redundancy, TruncatedSVD
+│   └── eda_insights_plots/
+│
 ├── model/                    # Modeling notebook + saved metrics in results/
+│   ├── modeling.ipynb        # Model training, calibration, SHAP, threshold analysis
+│   ├── feature_columns.json
+│   └── results/
+│
 └── app/                      # Shiny for Python deployment + model artifacts
+    ├── app.py
+    ├── helpers.py
+    ├── requirements.txt
+    ├── artifacts/
+    └── rsconnect-python/
 ```
 
 ## Key Results
