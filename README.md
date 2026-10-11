@@ -1,10 +1,8 @@
-# Mortgage Approval Prediction — STAT GR5243 Project 4
-
-**Team 23:** Veronica Joe (jj3470), Crystal Guo (lg3434), Shuxuan Xu (sx2412), Fangyi Lin (fl2748)
+# Mortgage Approval Prediction
 
 ## Introduction
 
-Designed for STAT GR5243, this project establishes an end-to-end machine learning framework to decode mortgage application outcomes using the Home Mortgage Disclosure Act (HMDA) database. We developed a robust analytical pipeline — spanning from sophisticated feature engineering to predictive modeling — to isolate the critical drivers of lending decisions. The project culminates in a comprehensive analysis of applicant demographics and loan characteristics, providing data-driven insights into the complex factors that influence mortgage approval and denial in the U.S. housing market.
+This project establishes an end-to-end machine learning framework to decode mortgage application outcomes using the Home Mortgage Disclosure Act (HMDA) database. We developed a robust analytical pipeline — spanning from sophisticated feature engineering to predictive modeling — to isolate the critical drivers of lending decisions. The project culminates in a comprehensive analysis of applicant demographics and loan characteristics, providing data-driven insights into the complex factors that influence mortgage approval and denial in the U.S. housing market.
 
 The final calibrated LightGBM model is deployed as an interactive R Shiny app:
 **[Mortgage Approval Estimator](https://crystalguo.shinyapps.io/mortgage-approval-estimator/)**
@@ -91,14 +89,6 @@ The final calibrated LightGBM model is deployed as an interactive R Shiny app:
 
 Top predictors by SHAP: `debt_to_income_ratio_ord`, `aus_grouped_Standard_AUS`, `loan_to_value_ratio`, `loan_amount`, `property_value`.
 
-## Team
-
-| Member | Contribution |
-|---|---|
-| Shuxuan Xu (sx2412) | Data preprocessing, cleaning, feature engineering |
-| Fangyi Lin (fl2748) | Exploratory data analysis and visualization |
-| Veronica Joe (jj3470) | Modeling-stage EDA and model selection support |
-| Crystal Guo (lg3434) | Model building, evaluation, and deployment |
 
 ## References
 
